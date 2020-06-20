@@ -15,30 +15,38 @@
         
         <div class="form">
             <form action="php/telegram.php" method="POST">
-                <fieldset class="form_field">
-                    <legend>Имя</legend>
+                <fieldset class="form__field">
+                    <legend>Фамилия Имя</legend>
 
                     <p class="form__text"> 
-                        <input type="email" required multiple autofocus><br/>
-                        <input type="submit" value="Submit">
+                        <input type="email" autocomplete required autofocus placeholder="Гурина Юлия">
                     </p>
                 </fieldset>
-                <fieldset class="form_field">
+                <fieldset class="form__field">
                     <legend>Номер телефона</legend>
 
                     <p class="form__text"> 
-                        <input type="email" required multiple autofocus><br/>
-                        <input type="submit" value="Submit">
+                        <input type="tel" autocomplete required placeholder="+375291234568"> 
                     </p>
                 </fieldset>
-                <fieldset class="form_field">
+                <fieldset class="form__field">
                     <legend>Желаемая дата</legend>
 
                     <p class="form__text"> 
-                        <input type="date"><br/>
-                        <input type="submit" value="Submit">
+                        <input type="datetime-local" required>
                     </p>
                 </fieldset>
+                <fieldset class="form__field">
+                    <legend>Желаемая дата</legend>
+
+                    <p class="form__text"> 
+                        <input type="radio" onMouseDown="this.isChecked=this.checked;" 
+                        onClick="this.checked=!this.isChecked;" value="Да">Да</br>
+                        <input type="radio" onMouseDown="this.isChecked=this.checked;" 
+                        onClick="this.checked=!this.isChecked;" value="Нет">Нет
+                    </p>
+                </fieldset>
+                
             </form>
         </div> 
     

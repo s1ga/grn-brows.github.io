@@ -6,6 +6,7 @@
     <title>Заявка на брови</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/reset.css"/>
 </head>
 <body>
     <div class="container">
@@ -16,37 +17,45 @@
         <div class="form">
             <form action="php/telegram.php" method="POST">
                 <fieldset class="form__field">
-                    <legend>Фамилия Имя</legend>
+                    <legend>Имя Фамилия</legend>
 
                     <p class="form__text"> 
-                        <input type="email" autocomplete required autofocus placeholder="Гурина Юлия">
+                        <input type="text" name="user_name" autocomplete required autofocus placeholder="Юлия Гурина">
                     </p>
                 </fieldset>
                 <fieldset class="form__field">
                     <legend>Номер телефона</legend>
 
                     <p class="form__text"> 
-                        <input type="tel" autocomplete required placeholder="+375291234568"> 
+                        <input type="tel" name="user_phone" autocomplete required placeholder="+375291234568"> 
                     </p>
                 </fieldset>
                 <fieldset class="form__field">
                     <legend>Желаемая дата</legend>
 
                     <p class="form__text"> 
-                        <input type="datetime-local" required>
+                        <input type="datetime-local" name="user_date" required>
                     </p>
                 </fieldset>
                 <fieldset class="form__field">
-                    <legend>Желаемая дата</legend>
+                    <legend>Вы у меня впервые?</legend>
 
                     <p class="form__text"> 
                         <input type="radio" onMouseDown="this.isChecked=this.checked;" 
-                        onClick="this.checked=!this.isChecked;" value="Да">Да</br>
+                        onClick="this.checked=!this.isChecked;" value="Да" name="user_first-time" id="radio_button">Да</br>
                         <input type="radio" onMouseDown="this.isChecked=this.checked;" 
-                        onClick="this.checked=!this.isChecked;" value="Нет">Нет
+                        onClick="this.checked=!this.isChecked;" value="Нет" name="user-first-time" id="radio_button">Нет
                     </p>
                 </fieldset>
-                
+                <fieldset class="form__field">
+                    <legend>Дата рождения*</legend>
+
+                    <p class="form__text"> 
+                        <input type="text" name="user_birth">
+                    </p>
+                </fieldset>
+                <p class="form__addition">* - число, месяц — только для новых клиентов</p>
+                <input class="form__submit" type="submit" name="user_submit" value="Отправить заявку">
             </form>
         </div> 
     

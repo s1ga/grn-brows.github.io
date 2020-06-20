@@ -1,22 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Заявка на брови</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-    <img width="40%" src="img/grn-brows_logo.svg" alt="Логотип"/>
-    <form action="php/telegram.php" method="POST">
-        <p>
-            Имя пользователя:
-            <input type="text" name="Username"/> 
-            Телефон:
-            <input type="tel" name="UserTelephone"/>
-        </p>
-        <input type="submit" value="Отправить заявку" name="SendForm"/>
-    </form>
+    <div class="container">
+        <header class="header">
+            <img class="logo" width="40%" src="img/grn-brows_logo.svg" alt="Логотип"/>
+        </header>
+        
+        <div class="form">
+            <form action="php/telegram.php" method="POST">
+                <fieldset class="form_field">
+                    <legend>Имя</legend>
+
+                    <p class="form__text"> 
+                        <input type="email" required multiple autofocus><br/>
+                        <input type="submit" value="Submit">
+                    </p>
+                </fieldset>
+                <fieldset class="form_field">
+                    <legend>Номер телефона</legend>
+
+                    <p class="form__text"> 
+                        <input type="email" required multiple autofocus><br/>
+                        <input type="submit" value="Submit">
+                    </p>
+                </fieldset>
+                <fieldset class="form_field">
+                    <legend>Желаемая дата</legend>
+
+                    <p class="form__text"> 
+                        <input type="date"><br/>
+                        <input type="submit" value="Submit">
+                    </p>
+                </fieldset>
+            </form>
+        </div> 
+    
+    </div>
 </body>
 </html>

@@ -47,9 +47,18 @@
                     <legend>Процедура</legend>
 
                     <p class="form__text"> 
-                        <p class="checkbox_par"><input type="checkbox" name="user_procedure" value="Окрашивание">Окрашивание 25р</p>
-                        <p class="checkbox_par"><input type="checkbox" name="user_procedure" value="Ламинирование">Ламинирование 35р</p>
-                        <p class="checkbox_par"><input type="checkbox" name="user_procedure" value="Мужская коррекция">Мужская коррекция 15р</p>
+                        <p class="checkbox_par">
+                            <input type="checkbox" id="procedure__checkbox1" name="user_procedure" value="Окрашивание">
+                            <label for="procedure__checkbox1">Окрашивание 25р</label>
+                        </p>
+                        <p class="checkbox_par">
+                            <input type="checkbox" id="procedure__checkbox2" name="user_procedure" value="Ламинирование">
+                            <label for="procedure__checkbox2">Ламинирование 35р</label>
+                        </p>
+                        <p class="checkbox_par">
+                            <input type="checkbox" id="procedure__checkbox3" name="user_procedure" value="Мужская коррекция">
+                            <label for="procedure__checkbox3">Мужская коррекция 15р</label>
+                        </p>
                     </p>
                 </fieldset>
                 <!-- Дата -->
@@ -65,8 +74,14 @@
                     <legend>Вы у меня впервые?</legend>
 
                     <p class="form__text first-time"> 
-                        <p class="checkbox_par"><input type="checkbox" name="user_first-time" id="form__checkbox1" onclick="check()">Да</p>
-                        <p class="checkbox_par"><input type="checkbox" name="user_first-time" id="form__checkbox2" onclick="check()">Нет</p>
+                        <p class="checkbox_par">
+                            <input type="checkbox" name="user_first-time" id="first-time__checkbox1" onclick="check()">
+                            <label for="first-time__checkbox1">Да</label>
+                        </p>
+                        <p class="checkbox_par">
+                            <input type="checkbox" name="user_first-time" id="first-time__checkbox2" onclick="check()">
+                            <label for="first-time__checkbox2">Нет</label>
+                        </p>
                     </p>
                 </fieldset>
                 <!-- Дата рождения -->

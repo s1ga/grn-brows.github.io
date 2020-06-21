@@ -1,5 +1,5 @@
-let checkbox1 = document.getElementById('form__checkbox1');
-let checkbox2 = document.getElementById('form__checkbox2');
+let checkbox1 = document.getElementById('first-time__checkbox1');
+let checkbox2 = document.getElementById('first-time__checkbox2');
 let birth_id = "form__birth"
 
 function check() {

@@ -15,7 +15,7 @@ body {
 }
 
 .header {
-
+    padding-top: 20px;
 }
 
 .logo {
@@ -29,7 +29,7 @@ body {
 .form {
     display: block;
     margin-top: 5%;
-    margin-bottom: 5%;
+    padding-bottom: 3%;
 }
 
 .form__field {
@@ -39,7 +39,7 @@ body {
     width: 40%;
     margin: 0 auto;
     margin-bottom: 2%;
-    height: 100px;
+    padding-bottom: 25px;
     padding-left: 3%;
 }
 
@@ -47,9 +47,10 @@ body {
     margin-top: 6%;
 }
 
-.form__text:last-child{
-    color: #000000;
+.checkbox_par {
     font-size: 16px;
+    color: #000000;
+    margin-bottom: 3px;
 }
 
 .form__submit {

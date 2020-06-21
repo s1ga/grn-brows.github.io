@@ -42,6 +42,16 @@
                         <input type="tel" name="user_phone" autocomplete required placeholder="+375291234568"> 
                     </p>
                 </fieldset>
+                <!-- Процедура -->
+                <fieldset class="form__field">
+                    <legend>Процедура</legend>
+
+                    <p class="form__text"> 
+                        <p class="checkbox_par"><input type="checkbox" name="user_procedure" value="Окрашивание">Окрашивание 25р</p>
+                        <p class="checkbox_par"><input type="checkbox" name="user_procedure" value="Ламинирование">Ламинирование 35р</p>
+                        <p class="checkbox_par"><input type="checkbox" name="user_procedure" value="Мужская коррекция">Мужская коррекция 15р</p>
+                    </p>
+                </fieldset>
                 <!-- Дата -->
                 <fieldset class="form__field">
                     <legend>Желаемая дата</legend>
@@ -55,8 +65,8 @@
                     <legend>Вы у меня впервые?</legend>
 
                     <p class="form__text first-time"> 
-                        <input type="checkbox" id="form__checkbox1" onclick="check()">Да<br>
-                        <input type="checkbox" id="form__checkbox2" onclick="check()">Нет
+                        <p class="checkbox_par"><input type="checkbox" name="user_first-time" id="form__checkbox1" onclick="check()">Да</p>
+                        <p class="checkbox_par"><input type="checkbox" name="user_first-time" id="form__checkbox2" onclick="check()">Нет</p>
                     </p>
                 </fieldset>
                 <!-- Дата рождения -->

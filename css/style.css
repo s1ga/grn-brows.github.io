@@ -1,8 +1,10 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background-image: url();
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: sticky;
+    background-image: url(../img/bg.jpg);
+    background-attachment: fixed;
     font-size: 20px;
 }
 
@@ -14,6 +16,14 @@ body {
 
 .header {
 
+}
+
+.logo {
+    width: 40%;
+}
+
+.request_heading {
+    text-align: center;
 }
 
 .form {
@@ -34,7 +44,7 @@ body {
 }
 
 .form__text {
-    margin-top: 25px;
+    margin-top: 6%;
 }
 
 .form__text:last-child{
@@ -53,4 +63,50 @@ body {
     display: none;
     opacity: 0;
     transition: opacity 0.8s cubic-bezier(0.75, 0, 0.5, 1);
+}
+
+@media screen and (min-width: 300px) and (max-width:960px) {
+    body {
+        background-size: cover;
+        font-size: 1rem;
+    }
+
+    .container {
+        width: 75%;
+    }
+
+    .header {
+        padding-top: 3%;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .request_heading {
+        margin-top: 8%;
+        font-size: 1.6rem;
+    }
+
+    .form__field {
+        width: 80%;
+        padding-left: 10%;
+        margin-bottom: 4%;
+    }
+
+    .form__text {
+        margin-top: 15%;
+    }
+
+    .first-time {
+        margin-top: 10%;
+    }
+
+    .form__text:last-child {
+        font-size: 0.9rem;
+    }
+
+    .form__submit {
+        margin-left: 25%;
+    }
 }

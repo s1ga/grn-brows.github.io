@@ -10,12 +10,23 @@
 </head>
 <body>
     <div class="container">
+        <!-- Шапка страницы -->
         <header class="header">
-            <img class="logo" width="40%" src="img/grn-brows_logo.svg" alt="Логотип"/>
+            <!-- Лого -->
+            <img class="logo" src="img/grn-brows_logo.svg" alt="Логотип"/>
+            <!-- Навигация -->
+            <nav class="nav">
+
+            </nav>
         </header>
         
+        <!-- Заголовок заявки -->
+        <h2 class="request_heading">Оставьте вашу заявку</h2 class="request_heading">
+        
+        <!-- Форма -->
         <div class="form">
             <form action="php/telegram.php" method="POST">
+                <!-- Имя и Фамилия -->
                 <fieldset class="form__field">
                     <legend>Имя Фамилия</legend>
 
@@ -23,6 +34,7 @@
                         <input type="text" name="user_name" autocomplete required autofocus placeholder="Юлия Гурина">
                     </p>
                 </fieldset>
+                <!-- Номер телефона -->
                 <fieldset class="form__field">
                     <legend>Номер телефона</legend>
 
@@ -30,6 +42,7 @@
                         <input type="tel" name="user_phone" autocomplete required placeholder="+375291234568"> 
                     </p>
                 </fieldset>
+                <!-- Дата -->
                 <fieldset class="form__field">
                     <legend>Желаемая дата</legend>
 
@@ -37,21 +50,24 @@
                         <input type="datetime-local" name="user_date">
                     </p>
                 </fieldset>
+                <!-- Первый раз -->
                 <fieldset class="form__field">
                     <legend>Вы у меня впервые?</legend>
 
-                    <p class="form__text"> 
+                    <p class="form__text first-time"> 
                         <input type="checkbox" id="form__checkbox1" onclick="check()">Да<br>
                         <input type="checkbox" id="form__checkbox2" onclick="check()">Нет
                     </p>
                 </fieldset>
+                <!-- Дата рождения -->
                 <fieldset class="form__field" id="form__birth">
-                    <legend>Дата рождения*</legend>
+                    <legend>Дата рождения</legend>
 
                     <p class="form__text"> 
                         <input type="text" name="user_birth" placeholder="Число, месяц">
                     </p>
                 </fieldset>
+                <!-- Отправка формы -->
                 <input class="form__submit" type="submit" name="user_submit" value="Отправить заявку">
             </form>
         </div> 

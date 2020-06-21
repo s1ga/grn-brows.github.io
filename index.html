@@ -41,24 +41,23 @@
                     <legend>Вы у меня впервые?</legend>
 
                     <p class="form__text"> 
-                        <input type="radio" onMouseDown="this.isChecked=this.checked;" 
-                        onClick="this.checked=!this.isChecked;" value="Да" name="user_first-time" id="radio_button">Да</br>
-                        <input type="radio" onMouseDown="this.isChecked=this.checked;" 
-                        onClick="this.checked=!this.isChecked;" value="Нет" name="user-first-time" id="radio_button">Нет
+                        <input type="checkbox" id="form__checkbox1" onclick="check()">Да<br>
+                        <input type="checkbox" id="form__checkbox2" onclick="check()">Нет
                     </p>
                 </fieldset>
-                <fieldset class="form__field">
+                <fieldset class="form__field" id="form__birth">
                     <legend>Дата рождения*</legend>
 
                     <p class="form__text"> 
-                        <input type="text" name="user_birth">
+                        <input type="text" name="user_birth" placeholder="Число, месяц">
                     </p>
                 </fieldset>
-                <p class="form__addition">* - число, месяц — только для новых клиентов</p>
                 <input class="form__submit" type="submit" name="user_submit" value="Отправить заявку">
             </form>
         </div> 
     
     </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

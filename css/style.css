@@ -8,7 +8,7 @@ body {
     margin: 0 auto;
 }
 
-header {
+.header {
 
 }
 
@@ -38,14 +38,13 @@ header {
     font-size: 16px;
 }
 
-.form__addition {
-    font-size: 0.9rem;
-    margin-left: 30%;
-}
-
 .form__submit {
     background-color: #E7D4CD;
     border-radius: 10px;
     margin-top: 3%;
     margin-left: 45%;
+}
+
+#form__birth {
+    display: none;
 }

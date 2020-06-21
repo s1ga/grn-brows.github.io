@@ -7,8 +7,8 @@
 $name = $_POST['user_name'];
 $phone = $_POST['user_phone'];
 $date = $_POST['user_date'];
-$date = $_POST['user_first-time'];
-$date = $_POST['user_birth'];
+$first_time = $_POST['user_first-time'];
+$birth = $_POST['user_birth'];
  
 //в переменную $token нужно вставить токен, который нам прислал @botFather
 $token = "994955297:AAHgN2GwzE9eKlhB-6BmrAMttlYWuMFCqtE";
@@ -18,8 +18,13 @@ $chat_id = "-496955271";
  
 //Далее создаем переменную, в которую помещаем PHP массив
 $arr = array(
-  'Имя пользователя: ' => $name,
-  'Телефон: ' => $phone
+  'Имя клиента: ' => $name,
+  'Телефон: ' => $phone,
+  'Желаемая дата: ' => $date,
+  'Первый раз: ' => $first_time,
+  if($birth) {
+    'Дата рождения: ' => $birth
+  }
 );
  
 //При помощи цикла перебираем массив и помещаем переменную $txt текст из массива $arr

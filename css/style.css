@@ -1,11 +1,12 @@
 body {
-    background-color: #E7D4CD;
+    
     font-size: 20px;
 }
 
 .container {
     width: 70%;
     margin: 0 auto;
+    background-color: #E7D4CD;
 }
 
 .header {
@@ -47,4 +48,6 @@ body {
 
 #form__birth {
     display: none;
+    opacity: 0;
+    transition: opacity 0.8s cubic-bezier(0.75, 0, 0.5, 1);
 }

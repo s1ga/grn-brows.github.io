@@ -80,6 +80,17 @@ body {
     -webkit-transition: opacity 0.8s cubic-bezier(0.75, 0, 0.5, 1);
 }
 
+.form__thankful__heading {
+   text-align: center;
+   font-size: 34px;
+   margin-bottom: 10px;
+}
+
+.form__thankful__text {
+    text-align: center;
+    font-size: 26px;
+}
+
 @media screen and (min-width: 300px) and (max-width:960px) {
     body {
         background-size: cover;

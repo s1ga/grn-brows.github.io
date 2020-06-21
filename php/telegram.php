@@ -7,6 +7,7 @@
 $name = $_POST['user_name'];
 $phone = $_POST['user_phone'];
 $date = $_POST['user_date'];
+$procedure = $_POST['user_procedure'];
 $first_time = $_POST['user_first-time'];
 $birth = $_POST['user_birth'];
  
@@ -20,6 +21,7 @@ $chat_id = "-496955271";
 $arr = array(
   'Имя клиента: ' => $name,
   'Телефон: ' => $phone,
+  'Процедура: ' => $procedure,
   'Желаемая дата: ' => $date,
   'Первый раз: ' => $first_time,
   if($birth) {

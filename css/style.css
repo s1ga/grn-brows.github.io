@@ -5,7 +5,7 @@ html {
 body {
     background-image: url(../img/bg.jpg);
     background-attachment: fixed;
-    font-size: 20px;
+    font-size: 20px;   
 }
 
 .container {
@@ -47,8 +47,17 @@ body {
     padding-left: 3%;
 }
 
+.form__field:last-child,
+.form__submit:nth-child(n - 1) {
+    margin-bottom: 0;
+}
+
 .form__text {
     margin-top: 6%;
+}
+
+.form__content {
+    margin-bottom: 30px;
 }
 
 .checkbox_par {
@@ -59,21 +68,25 @@ body {
 }
 
 .form__submit {
+    display: block;
     background-color: #E7D4CD;
     border-radius: 10px;
     cursor: pointer;
 
-    margin-top: 1%;
-    margin-left: 40%;
+    padding: 5px 25px;
+    margin: 0 auto;
+    /* margin-left: 40%; */
 
-    width: 19%;
-    height: 30px;
+    /* width: 19%;
+    height: 30px; */
     border: 1px solid #000000;
     font-size: 1rem;
     -webkit-transition: all .5s ease-out;
 }
 
-.form__submit:hover {
+.form__submit:hover,
+.form__submit:active,
+.form__submit:focus {
     background-color: #AF4A38;
     color: #ffffff
 }
@@ -137,10 +150,20 @@ body {
     }
 
     .form__submit {
-        margin-left: 20%;
+        /* margin-left: 20%; */
         font-size: 0.9rem;
 
-        width: 60%;
-        height: 27px;
+        /* width: 60%;
+        height: 27px; */
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 1080px) {
+    .form__submit {
+        /* margin-left: 20%; */
+        font-size: 0.9rem;
+
+        /* width: 20%;
+        height: 27px; */
     }
 }

@@ -3,6 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name="description" content="" />
     <title>Заявка на брови</title>
     <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scaleble=no'>
     <link rel="stylesheet" href="css/style.css"/>
@@ -18,77 +19,80 @@
         </header>
         
         <!-- Заголовок заявки -->
-        <h2 class="request_heading">Оставьте вашу заявку</h2 class="request_heading">
+        <h2 class="request_heading">Оставьте вашу заявку</h2>
         
         <!-- Форма -->
         <div class="form">
             <form action="php/telegram.php" method="POST" novalidate>
-                <!-- Имя и Фамилия -->
-                <fieldset class="form__field">
-                    <legend>Имя Фамилия</legend>
+                <div class="form__content">
+                    <!-- Имя и Фамилия -->
+                    <fieldset class="form__field">
+                        <legend>Имя Фамилия</legend>
 
-                    <p class="form__text"> 
-                        <input type="text" name="user_name" autocomplete required placeholder="Юлия Гурина">
-                    </p>
-                </fieldset>
-                <!-- Номер телефона -->
-                <fieldset class="form__field">
-                    <legend>Номер телефона</legend>
-
-                    <p class="form__text"> 
-                        <input type="tel" name="user_phone" autocomplete required placeholder="+375291234568"> 
-                    </p>
-                </fieldset>
-                <!-- Процедура -->
-                <fieldset class="form__field">
-                    <legend>Процедура</legend>
-
-                    <p class="form__text"> 
-                        <p class="checkbox_par">
-                            <input type="checkbox" id="procedure__checkbox1" name="user_procedure" value="Окрашивание">
-                            <label for="procedure__checkbox1">Окрашивание</label>
+                        <p class="form__text"> 
+                            <input type="text" name="user_name" autocomplete required placeholder="Юлия Гурина">
                         </p>
-                        <p class="checkbox_par">
-                            <input type="checkbox" id="procedure__checkbox2" name="user_procedure" value="Ламинирование">
-                            <label for="procedure__checkbox2">Ламинирование</label>
-                        </p>
-                        <p class="checkbox_par">
-                            <input type="checkbox" id="procedure__checkbox3" name="user_procedure" value="Мужская коррекция">
-                            <label for="procedure__checkbox3">Мужская коррекция</label>
-                        </p>
-                    </p>
-                </fieldset>
-                <!-- Дата -->
-                <fieldset class="form__field">
-                    <legend>Желаемая дата</legend>
+                    </fieldset>
+                    <!-- Номер телефона -->
+                    <fieldset class="form__field">
+                        <legend>Номер телефона</legend>
 
-                    <p class="form__text"> 
-                        <input type="datetime-local" name="user_date">
-                    </p>
-                </fieldset>
-                <!-- Первый раз -->
-                <fieldset class="form__field">
-                    <legend>Вы у меня впервые?</legend>
-
-                    <p class="form__text first-time"> 
-                        <p class="checkbox_par">
-                            <input type="checkbox" name="user_first-time" id="first-time__checkbox1" onclick="check()" value="Да">
-                            <label for="first-time__checkbox1">Да</label>
+                        <p class="form__text"> 
+                            <input type="tel" name="user_phone" autocomplete required placeholder="+375291234568"> 
                         </p>
-                        <p class="checkbox_par">
-                            <input type="checkbox" name="user_first-time" id="first-time__checkbox2" onclick="check()" value="Нет">
-                            <label for="first-time__checkbox2">Нет</label>
-                        </p>
-                    </p>
-                </fieldset>
-                <!-- Дата рождения -->
-                <fieldset class="form__field" id="form__birth">
-                    <legend>Дата рождения</legend>
+                    </fieldset>
+                    <!-- Процедура -->
+                    <fieldset class="form__field">
+                        <legend>Процедура</legend>
 
-                    <p class="form__text"> 
-                        <input type="text" name="user_birth" placeholder="Число, месяц">
-                    </p>
-                </fieldset>
+                        <p class="form__text"> 
+                            <p class="checkbox_par">
+                                <input type="checkbox" id="procedure__checkbox1" name="user_procedure" value="Окрашивание">
+                                <label for="procedure__checkbox1">Окрашивание</label>
+                            </p>
+                            <p class="checkbox_par">
+                                <input type="checkbox" id="procedure__checkbox2" name="user_procedure" value="Ламинирование">
+                                <label for="procedure__checkbox2">Ламинирование</label>
+                            </p>
+                            <p class="checkbox_par">
+                                <input type="checkbox" id="procedure__checkbox3" name="user_procedure" value="Мужская коррекция">
+                                <label for="procedure__checkbox3">Мужская коррекция</label>
+                            </p>
+                        </p>
+                    </fieldset>
+                    <!-- Дата -->
+                    <fieldset class="form__field">
+                        <legend>Желаемая дата</legend>
+
+                        <p class="form__text"> 
+                            <input type="datetime-local" name="user_date">
+                        </p>
+                    </fieldset>
+                    <!-- Первый раз -->
+                    <fieldset class="form__field">
+                        <legend>Вы у меня впервые?</legend>
+
+                        <p class="form__text first-time"> 
+                            <p class="checkbox_par">
+                                <input type="checkbox" name="user_first-time" id="first-time__checkbox1" onclick="check()" value="Да">
+                                <label for="first-time__checkbox1">Да</label>
+                            </p>
+                            <p class="checkbox_par">
+                                <input type="checkbox" name="user_first-time" id="first-time__checkbox2" onclick="check()" value="Нет">
+                                <label for="first-time__checkbox2">Нет</label>
+                            </p>
+                        </p>
+                    </fieldset>
+                    <!-- Дата рождения -->
+                    <fieldset class="form__field" id="form__birth">
+                        <legend>Дата рождения</legend>
+
+                        <p class="form__text"> 
+                            <input type="text" name="user_birth" placeholder="Число, месяц">
+                        </p>
+                    </fieldset>
+                </div>
+                
                 <!-- Отправка формы -->
                 <input class="form__submit" type="submit" name="user_submit" value="Отправить заявку">
             </form>
@@ -97,6 +101,6 @@
     </div>
 
     <!-- Подключение скрипта  -->
-    <script src="js/script.js"></script>
+    <script src="js/checkbox.js"></script>
 </body>
 </html>
